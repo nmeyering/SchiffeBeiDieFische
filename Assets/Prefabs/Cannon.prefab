@@ -146,7 +146,6 @@ GameObject:
   - component: {fileID: 114198021811190220}
   - component: {fileID: 114017724590203654}
   - component: {fileID: 114981079199893832}
-  - component: {fileID: 114216626557668622}
   m_Layer: 0
   m_Name: elevation_adjustor
   m_TagString: Untagged
@@ -164,6 +163,9 @@ GameObject:
   - component: {fileID: 4159166395373950}
   - component: {fileID: 33008565042644176}
   - component: {fileID: 23596632525493104}
+  - component: {fileID: 114207406697547524}
+  - component: {fileID: 114915803333922858}
+  - component: {fileID: 114106336483097626}
   m_Layer: 0
   m_Name: cannon
   m_TagString: Untagged
@@ -209,6 +211,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4423929797970404}
+  - component: {fileID: 114989862021749712}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -268,7 +271,7 @@ Transform:
   m_GameObject: {fileID: 1179747327986088}
   m_LocalRotation: {x: 0.11871457, y: -0.00000010536709, z: 0.000000021073413, w: 0.99292845}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0655637, y: 2.065563, z: 2.065563}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 4908400297056294}
   m_RootOrder: 0
@@ -382,7 +385,7 @@ Transform:
   m_GameObject: {fileID: 1672484413797086}
   m_LocalRotation: {x: 0.0000004846887, y: 0.11871426, z: -0.9929285, w: 0.00000027395444}
   m_LocalPosition: {x: 0.03333, y: -0, z: 0}
-  m_LocalScale: {x: 2.0655665, y: 2.0655656, z: 2.0655656}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 4908400297056294}
   m_RootOrder: 1
@@ -793,6 +796,19 @@ MonoBehaviour:
     type: 2}
   startPos: {fileID: 4142411802634306}
   startVelocity: 15
+--- !u!114 &114106336483097626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745410132783800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 159ebe3165d7eb54e91dd43577c1c775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drive: {fileID: 114198021811190220}
+  rotationAxis: 1
 --- !u!114 &114198021811190220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -808,7 +824,7 @@ MonoBehaviour:
   childCollider: {fileID: 0}
   linearMapping: {fileID: 0}
   hoverLock: 0
-  limited: 1
+  limited: 0
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
     m_PersistentCalls:
@@ -847,19 +863,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159ebe3165d7eb54e91dd43577c1c775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  azimuth: {fileID: 114570252560271786}
---- !u!114 &114216626557668622
+  drive: {fileID: 114570252560271786}
+  rotationAxis: 2
+--- !u!114 &114207406697547524
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1707605828598074}
+  m_GameObject: {fileID: 1745410132783800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fabf1f7d815e64148ac356c69882a4cf, type: 3}
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannon: {fileID: 4159166395373950}
 --- !u!114 &114345407437707276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -937,6 +953,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
+--- !u!114 &114915803333922858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745410132783800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f32883eed859804dbb0c5fedac91496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisOfRotation: 0
+  childCollider: {fileID: 0}
+  linearMapping: {fileID: 0}
+  hoverLock: 0
+  limited: 0
+  frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
+  onFrozenDistanceThreshold:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  minAngle: -45
+  freezeOnMin: 0
+  onMinAngle:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  maxAngle: 45
+  freezeOnMax: 0
+  onMaxAngle:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  forceStart: 0
+  startAngle: 0
+  rotateGameObject: 1
+  debugPath: 0
+  dbgPathLimit: 50
+  debugText: {fileID: 0}
+  outAngle: 0
 --- !u!114 &114981079199893832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -948,3 +1007,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114989862021749712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1794148539888666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a8756e142bd354a8aca0c855097913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearRatioAzimuth: 2
+  gearRatioElevation: 10
