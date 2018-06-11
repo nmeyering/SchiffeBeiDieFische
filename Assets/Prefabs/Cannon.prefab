@@ -823,7 +823,7 @@ MonoBehaviour:
   axisOfRotation: 0
   childCollider: {fileID: 0}
   linearMapping: {fileID: 0}
-  hoverLock: 0
+  hoverLock: 1
   limited: 0
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
@@ -1018,5 +1018,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a8756e142bd354a8aca0c855097913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gearRatioAzimuth: 2
+  gearRatioAzimuth: 1
   gearRatioElevation: 10

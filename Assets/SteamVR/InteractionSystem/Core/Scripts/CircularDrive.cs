@@ -147,7 +147,7 @@ namespace Valve.VR.InteractionSystem
 
 			if ( transform.parent )
 			{
-				worldPlaneNormal = transform.parent.localToWorldMatrix.MultiplyVector( worldPlaneNormal ).normalized;
+				worldPlaneNormal = transform.parent.localToWorldMatrix.MultiplyVector( localPlaneNormal ).normalized;
 			}
 
 			if ( limited )
@@ -173,6 +173,14 @@ namespace Valve.VR.InteractionSystem
 			}
 
 			UpdateAll();
+		}
+
+		private void Update()
+		{
+			if ( transform.parent )
+			{
+				worldPlaneNormal = transform.parent.localToWorldMatrix.MultiplyVector( localPlaneNormal ).normalized;
+			}
 		}
 
 
