@@ -1,91 +1,14 @@
 fileFormatVersion: 2
-guid: 00718197cc84fba4799a56e154b2ac0f
+guid: 838b5d78a81fe9e4ebc892909f21fdcf
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: axle
-    100002: bucket
-    100004: //RootNode
-    100006: cannon
-    100008: Circle.001
-    100010: crank_wheel
-    100012: fuse
-    100014: plunger
-    100016: stand
-    100018: torch
-    100020: bucket_handle
-    100022: Circle
-    100024: Cube.002
-    100026: Cube.003
-    100028: Cube.004
-    100030: Plane
-    400000: axle
-    400002: bucket
-    400004: cannon
-    400006: //RootNode
-    400008: Circle.001
-    400010: crank_wheel
-    400012: fuse
-    400014: plunger
-    400016: stand
-    400018: torch
-    400020: bucket_handle
-    400022: Circle
-    400024: Cube.002
-    400026: Cube.003
-    400028: Cube.004
-    400030: Plane
-    2100000: metal
-    2100002: wood
-    2100004: blackpowder
-    2100006: No Name
-    2100008: burnt
-    2100010: fuse
-    2300000: axle
-    2300002: bucket
-    2300004: cannon
-    2300006: Circle.001
-    2300008: crank_wheel
-    2300010: fuse
-    2300012: plunger
-    2300014: stand
-    2300016: torch
-    2300018: bucket_handle
-    2300020: Circle
-    2300022: Cube.002
-    2300024: Cube.003
-    2300026: Cube.004
-    2300028: Plane
-    3300000: axle
-    3300002: bucket
-    3300004: cannon
-    3300006: Circle.001
-    3300008: crank_wheel
-    3300010: fuse
-    3300012: plunger
-    3300014: stand
-    3300016: torch
-    3300018: bucket_handle
-    3300020: Circle
-    3300022: Cube.002
-    3300024: Cube.003
-    3300026: Cube.004
-    3300028: Plane
-    4300000: bucket
-    4300002: Circle.001
-    4300004: plunger
-    4300006: torch
-    4300008: axle
-    4300010: crank_wheel
-    4300012: stand
-    4300014: fuse
-    4300016: cannon
-    4300018: bucket_handle
-    4300020: Plane
-    4300022: Cube.004
-    4300024: Circle
-    4300026: Cube.003
-    4300028: Cube.002
+    100000: //RootNode
+    400000: //RootNode
+    2100000: wood
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane.003
   externalObjects: {}
   materials:
     importMaterials: 1
