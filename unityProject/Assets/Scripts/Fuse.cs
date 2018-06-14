@@ -11,16 +11,14 @@ public class Fuse : MonoBehaviour
 	public UnityEvent Expire = new UnityEvent();
 	public Transform startSparkPos;
 	public Transform endSparkPos;
-	
-    public GameObject cannonballPrefab;
-    public Transform ballStartPos;
-    public float startVelocity;
 
 	private float remainingBurnTime;
 	private Renderer renderer;
+	private Cannon cannon;
 
 	void Awake()
 	{
+		cannon = GetComponentInParent<Cannon>();
 		remainingBurnTime = 0;
 		renderer = GetComponent<Renderer>();
 		renderer.material.SetFloat("_FuseRemaining", 1);
@@ -62,17 +60,10 @@ public class Fuse : MonoBehaviour
 
 		sparks.Stop();
 		
-		ShootCannon();
+		cannon.Shoot();
 		Expire.Invoke();
 		remainingBurnTime = 0;
 	}
-	
-    public void ShootCannon()
-    {
-        var go = GameObject.Instantiate(cannonballPrefab, ballStartPos.position, ballStartPos.rotation);
-        var rb = go.AddComponent<Rigidbody>();
-        rb.AddForce(startVelocity * ballStartPos.forward, ForceMode.VelocityChange);
-    }
 
     private void OnTriggerEnter(Collider other)
     {

@@ -20,7 +20,17 @@ ModelImporter:
     3300004: Circle.001
     4300000: Circle.001
     4300002: bucket_handle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 2f05f6fcfeb87ca4e9c9db845b1e9dd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: e04eeb8442e44ad4fa23b18c263b23d6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

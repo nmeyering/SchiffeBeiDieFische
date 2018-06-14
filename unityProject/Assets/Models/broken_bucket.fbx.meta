@@ -4,12 +4,28 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Circle
+    100004: Cube.002
+    100006: Cube.003
     400000: //RootNode
+    400002: Circle
+    400004: Cube.002
+    400006: Cube.003
     2100000: wood
     2100002: metal
+    2100004: No Name
     2300000: //RootNode
+    2300002: Circle
+    2300004: Cube.002
+    2300006: Cube.003
     3300000: //RootNode
+    3300002: Circle
+    3300004: Cube.002
+    3300006: Cube.003
     4300000: Circle.001
+    4300002: Circle
+    4300004: Cube.003
+    4300006: Cube.002
   externalObjects: {}
   materials:
     importMaterials: 1
