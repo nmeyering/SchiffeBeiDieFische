@@ -4,11 +4,20 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: plunger
+    100004: plunger.001
     400000: //RootNode
+    400002: plunger
+    400004: plunger.001
     2100000: wood
     2300000: //RootNode
+    2300002: plunger
+    2300004: plunger.001
     3300000: //RootNode
+    3300002: plunger
+    3300004: plunger.001
     4300000: plunger
+    4300002: plunger.001
   externalObjects: {}
   materials:
     importMaterials: 1
